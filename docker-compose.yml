@@ -1,0 +1,8 @@
+version: '3'
+services:
+  airflow:
+    image: "my-airflow:local"
+    ports:
+      - "3001:8080"
+    volumes:
+      - ./dags:/usr/local/airflow/dags
